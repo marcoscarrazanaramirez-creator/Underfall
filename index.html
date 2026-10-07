@@ -1,0 +1,18 @@
+ <main class="screen">
+    <h1>UNDERFALL</h1>
+    <p class="subtitle">A WORLD BURIED IN DARKNESS</p>
+    <button onclick="enterGame()">ENTER</button>
+    <p id="message">* Something stirs in the darkness.</p>
+  </main>
+  <script>
+    function enterGame() {
+      document.body.classList.add("glitch");
+      document.getElementById("message").textContent =
+        "* You feel a strange presence watching you.";
+      setTimeout(() => {
+        document.body.classList.remove("glitch");
+      }, 700);
+    }
+  </script>
+</body>
+</html>
